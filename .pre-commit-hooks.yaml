@@ -1,0 +1,7 @@
+-   id: commit-analyzer
+    name: Commit Analyzer
+    description: Ensure commit messages match the format in .commitformat
+    entry: hooks/commit_analyzer.py
+    language: python
+    language_version: python3
+    types: [commit-msg]
