@@ -12,3 +12,16 @@ Benefits:
 - **Feedback Loop**: Provides real-time feedback to developers, suggesting improvements or corrections to their commit messages.
 
 In the realm of code, where clarity is king, **CommitAnalyzer** ensures that your project's narrative is as polished as the code itself. Commit with confidence, knowing that your messages are in line with your team's best practices! 🔍📖
+
+
+## Instructions:
+Place the above Python code in the pre-commit file within the .git/hooks directory of your repository.
+Make the pre-commit file executable:
+
+chmod +x pre-commit
+
+In the root of your repository, create a file named .commitformat.
+
+Now, when a user tries to commit, the script will check the commit message against the regex pattern specified in .commitformat. If the commit message doesn't match, the commit will be halted, and an error message will be displayed.
+
+This approach provides flexibility, as users can easily modify the .commitformat file to change the commit message requirements as needed.
